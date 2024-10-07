@@ -1,0 +1,22 @@
+import math
+
+n = int(input("Give me a value of n: "))
+
+
+print("Counting from 1 to n:")
+print(f"{'j':<5}{'tri':<5}")
+for i in range(1, n + 1):
+    tri = (i * (i + 1)) // 2
+    print(f"{i:<5}{tri:<5}")
+
+
+def factorial(num):
+    result = 1
+    for i in range(2, num + 1):
+      result *= i
+    return result
+
+print(f"\n{'j':<10}{'factorial':<10}")
+for i in range(1, n + 1):
+    fact = factorial(i)
+    print(f"{i:<10}{fact:<10}")
