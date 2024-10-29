@@ -1,0 +1,47 @@
+import math
+
+def find_minimum_perimeter(n):
+    # Initialize the minimum perimeter to a large number
+    min_perimeter = float('inf')
+    best_x, best_y = 1, n
+    
+    # We only need to iterate up to the square root of n to find factors
+    max_factor = math.floor(math.sqrt(n))
+    
+    for x in range(1, max_factor + 1):
+        if n % x == 0:
+            y = n // x  # Find the corresponding y for the factor x
+            perimeter = 2 * (x + y)  # Calculate the perimeter for this rectangle
+            if perimeter < min_perimeter:
+                min_perimeter = perimeter
+                best_x, best_y = x, y
+
+    return min_perimeter, best_x, best_y
+
+def main():
+    print("Welcome to the school yearbook program!")
+    
+    while True:
+        user_input = input("Please input your number of photographs (or type 'done' to finish): ").strip()
+        
+        # Check for 'done' to end the program
+        if user_input.lower() == "done":
+            print("Goodbye!")
+            break
+
+        # Check if input is a positive integer
+        try:
+            num_photos = int(user_input)
+            if num_photos <= 0:
+                print(f"{num_photos} is not a valid number of photos. Please enter a positive number.")
+                continue
+        except ValueError:
+            print("Invalid input. Please enter a positive integer or 'done' to exit.")
+            continue
+        
+        # Find the minimum perimeter and dimensions
+        min_perimeter, x, y = find_minimum_perimeter(num_photos)
+        print(f"Minimum perimeter is {min_perimeter} with dimensions: {x} x {y}.")
+
+# Run the program
+main()
