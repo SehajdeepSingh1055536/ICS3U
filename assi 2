@@ -22,7 +22,7 @@ def main():
     print("Welcome to the school yearbook program!")
     
     while True:
-        user_input = input("Please input your number of photographs (or type 'done' to finish): ").strip()
+        user_input = input("Please input your number of photographs.")
         
         # Check for 'done' to end the program
         if user_input.lower() == "done":
