@@ -20,7 +20,7 @@ perimeter (int): The perimeter of the rectangle calculated with the dimensions x
 main function
 user_input (str): The user’s input, which should be a positive integer or the keyword "done" to end the program.
 num_photos (int): The validated integer number of photographs, converted from user_input.
-
+"
 
 
 import math
