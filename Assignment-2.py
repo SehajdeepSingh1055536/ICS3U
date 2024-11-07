@@ -1,26 +1,25 @@
-"
-Author - Sehajdeep
-Due date - 8 Nov, 2024
-Program - School Yearbook Assignment
-Description - This program helps determine the optimal layout
-(dimensions and minimum perimeter) for arranging a specified
-number of photographs in a rectangular grid. The program finds
-the layout with the smallest perimeter to conserve space.
+#Author - Sehajdeep
+#Due date - 8 Nov, 2024
+#Program - School Yearbook Assignment
+#Description - This program helps determine the optimal layout
+#(dimensions and minimum perimeter) for arranging a specified
+#number of photographs in a rectangular grid. The program finds
+#the layout with the smallest perimeter to conserve space.
 
-Variable Dictionary
-find_minimum_perimeter function
-n (int): The total number of photographs to arrange in the rectangle.
-min_perimeter (float): The current smallest perimeter found for possible layouts; initialized to infinity.
-best_x (int): The width of the rectangle layout yielding the minimum perimeter found so far.
-best_y (int): The height of the rectangle layout yielding the minimum perimeter found so far.
-max_factor (int): The largest factor of n we need to check, set to the floor of the square root of n for efficiency.
-x (int): The current factor of n in the iteration.
-y (int): The corresponding factor of n such that y = n // x.
-perimeter (int): The perimeter of the rectangle calculated with the dimensions x and y.
-main function
-user_input (str): The user’s input, which should be a positive integer or the keyword "done" to end the program.
-num_photos (int): The validated integer number of photographs, converted from user_input.
-"
+#Variable Dictionary
+#find_minimum_perimeter function
+#n (int): The total number of photographs to arrange in the rectangle.
+#min_perimeter (float): The current smallest perimeter found for possible layouts; initialized to infinity.
+#best_x (int): The width of the rectangle layout yielding the minimum perimeter found so far.
+#best_y (int): The height of the rectangle layout yielding the minimum perimeter found so far.
+#max_factor (int): The largest factor of n we need to check,set to the floor of the square root of n for efficiency.
+#x (int): The current factor of n in the iteration.
+#y (int): The corresponding factor of n such that y = n // x.
+#perimeter (int): The perimeter of the rectangle calculated with the dimensions x and y.
+#main function
+#user_input (str): The user’s input, which should be a positive integer or the keyword "done" to end the program.
+#num_photos (int): The validated integer number of photographs, converted from user_input.
+
 
 
 import math
