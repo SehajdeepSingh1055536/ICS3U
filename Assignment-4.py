@@ -60,9 +60,9 @@ def wordle_database():
         target_date = merge(day, month, year)
 
         if target_date < 20210619:
-            print("The date is too early. No Wordle records before June 19, 2021.")
+            print("The date is too early.  No wordles occurred before 20210619. Enter a later date..")
         elif target_date > 20240421:
-            print("The date is too late. No Wordle records after April 21, 2024.")
+            print("The date is too recent. Our records only go as late as 20240421. Please enter an earlier date.")
         else:
             word = find_word_by_date(target_date, dates, words)
             if word:
