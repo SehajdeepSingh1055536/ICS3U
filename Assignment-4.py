@@ -1,3 +1,8 @@
+#Author : Sehajdeep
+#Revison date : 20 December 2024
+#Program : Reading files and searching for data Assignment
+
+import math
 # Function to convert month abbreviation to number
 def month_to_number(month):
     months = {"Jan": "01", "Feb": "02", "Mar": "03", "Apr": "04", "May": "05", "Jun": "06",
