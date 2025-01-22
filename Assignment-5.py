@@ -1,4 +1,11 @@
+# Author : Sehajdeep 
+# Revison date : 22 January 2025
+# Program : Credit Card Report
+# Description: This program processes credit card data to identify expired or soon-to-expire cards.
+#it reads data from a file, validates abd filters it, abd generates a report listing thecards that are reqire imediate renewal.
+#The report is saved to an output file.
 # Function to read the data file safely
+
 def read_data(file_path):
     try:
         with open(file_path, "r") as file:
@@ -66,5 +73,7 @@ data = read_data(file_path)  # Read credit card data from the file
 if data:
     expired_cards = process_data(data)  # Find expired and soon-to-expire cards
     write_output(output_path, expired_cards)  # Save the results to a file
+
+ 
 
  
